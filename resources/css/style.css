@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--main-bg-bolor);
+  color: var(--font-color);
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #edf0f1;
+  --main-bg-bolor: #24252A;
+}
+
+/* Footer heart */
+.heart {
+  color: red;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 15px;
+  align-self: center;
+}
+
+/* Navigation bar */
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  padding: var(--spacing-3) 5rem;
+  justify-content:space-between;
+  z-index: 9;
+  /* border-bottom: 0.2rem solid #edf0f1;; */
+}
+
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+
+.navigation-item {
+  margin: var(--spacing-1) 20px;
+}
+
+.navigation-item a {
+  transition: all 0.3s ease 0s;
+}
+
+.navigation-item a:hover {
+  color: #0088a9;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#logo {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+button {
+  font-family: "Montserrat", sans-serif;
+  padding: 9px 15px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.github-bt {
+  background-color: rgba(222, 222, 222, 1);
+  padding: 8px 10px;
+  border-radius: 15px;
+}
+
+.github-bt:hover {
+  background-color: rgba(222, 222, 222, 0.8);
+}
+
+/* Profile image */
+.portrait {
+  min-width: 100px;
+  max-width: 15%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
+section {
+  padding: 2em 3em;
+}
+
+/* About me Section */
+#about-me {
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+  border: 0.2rem outset #edf0f1;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+/* Background */
+#about-me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .3;
+}
+
+.about-me-container {
+  margin: 160px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me-text-container {
+  z-index: 5;
+  margin-right: var(--spacing-3);
+  font-size: 18px;
+}
+
+.about-me-text-container h2{
+  font-size: 38px;
+  color: white;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: var(--spacing-3) 0;
+  text-align: center;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #131516;
+}
+
+.skills-container {
+  text-align: center;
+}
+
+#skills-icon-container {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-icon-container > * {
+  font-size: 3em;
+  width: 2em;
+  margin-top: var(--spacing-2);
+}
+
+/* Contact Section */
+#contact-icon-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin: var(--spacing-3);
+}
+
+/* Projects Section */
+#projects {
+  background-color: #181a1b;
+}
+
+.projects-container {
+  text-align: left;
+}
+
+.project-container {
+  border-bottom: solid #edf0f1;
+  border-radius: 10px;
+  background-color: #131516;
+  margin: 0;
+  padding: 1rem;
+}
+
+.project-image {
+  min-width: 230px;
+  max-width: 27%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+/* Contact Form */
+.contact-box {
+  width: 500px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .portrait {
+    margin: auto;
+    min-width: 150px;
+  }
+}

@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="./resources/css/style.css">
-</head>
-<body>
-	<header>
-		<h1 class="logo">Leonte Daniel</h1>
-		<nav>
-			<ul class="nav_links">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		<a class="cta" href="#"><button>Contact</button></a>
-	</header>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="https://kit.fontawesome.com/f2df1d0a37.js" crossorigin="anonymous"></script>
+    <script src="./resources/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a id="logo" href="#">Leonte Daniel</a>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#about-me">Home</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+      </ul>
+      <button id="contact-bt" type="button">Contact</button>
+    </nav>
+
+    <main>
+      <!-- About Me Section -->
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h2>Hi, I'm Daniel.</h2>
+            <p>Junior Web Developer, Problem Solver and Ardent Learner <br> from Romania.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <div id="skills-icon-container">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-git"></i>
+            <i class="fa-brands fa-chrome"></i>
+            <i class="fa-solid fa-terminal"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects">
+
+        <div class="projects-container">
+          <h2>Projects</h2>
+          <div class="project-container">
+            <h3>Mixed Messages</h3>
+            <img
+              src="./resources/images/project-1-image.png"
+              alt=""
+              class="project-image"
+            >
+            <p class="project-description">
+              Every time users runs the program, they get a new funny scenarios of investing in cryptocurrencies.
+            </p>
+            <button class="github-bt" type="button"><i class="fa-brands fa-github"></i> Code</button>
+          </div>
+
+          <div class="project-container">
+            <h3>More projects coming...</h3>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/DEC_VT100_terminal_transparent.png/800px-DEC_VT100_terminal_transparent.png"
+              alt=""
+              class="project-image"
+            >
+            <p hidden class="project-description">
+              Every time users runs the program, they get a new, randomized output.
+            </p>
+            <button hidden class="github-bt" type="button"><i class="fa-brands fa-github"></i> Code</button>
+          </div>
+
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>Made with <span class="heart">♥</span> in Romania</footer>
+    </main>
+  </body>
 </html>
