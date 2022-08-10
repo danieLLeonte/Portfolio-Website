@@ -216,6 +216,11 @@ footer {
   margin: var(--spacing-3);
 }
 
+#contact {
+  margin: auto;
+  padding: 5% 20%;
+}
+
 /* Projects Section */
 #projects {
   background-color: #181a1b;
@@ -254,5 +259,29 @@ footer {
   .portrait {
     margin: auto;
     min-width: 150px;
+  }
+
+  .navigation-items {
+    visibility: hidden;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #skills-icon-container {
+    width: 10%;
+    justify-content: space-between;
+  }
+
+  #skills-icon-container > * {
+    font-size: 2em;
+    width: 1em;
+    margin-top: var(--spacing-2);
+  }
+
+  #about-me::before {
+    background-position: center;
   }
 }
