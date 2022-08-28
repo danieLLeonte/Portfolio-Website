@@ -149,9 +149,10 @@ section {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: url("../images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: .3;
 }
 
@@ -172,6 +173,12 @@ section {
 .about-me-text-container h2{
   font-size: 38px;
   color: white;
+}
+
+#contact-icon-container-home > * {
+  font-size: 2em;
+  width: 2em;
+  margin: var(--spacing-3);
 }
 
 .project-title h3 {
@@ -197,7 +204,7 @@ footer {
 
 #skills-icon-container {
   display: flex;
-  width: 60%;
+  width: 90%;
   margin: auto;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -239,10 +246,15 @@ footer {
 }
 
 .project-image {
-  min-width: 230px;
+  min-width: 220px;
   max-width: 27%;
   height: 100%;
   flex-shrink: 0;
+}
+
+.react {
+  min-width: 140px;
+  max-width: 20%;
 }
 
 /* Contact Form */
@@ -250,7 +262,18 @@ footer {
   width: 500px;
 }
 
+.in-progress {
+  border-bottom: solid #5fd9fb;
+}
+
 /* Media Queries */
+@media only screen and (min-width: 1000px) {
+  #about-me::before {
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .about-me-container {
     flex-direction: column;
@@ -263,6 +286,7 @@ footer {
 
   .navigation-items {
     visibility: hidden;
+    width: 130px;
   }
 
   nav {
@@ -271,7 +295,7 @@ footer {
   }
 
   #skills-icon-container {
-    width: 10%;
+    width: 30%;
     justify-content: space-between;
   }
 
