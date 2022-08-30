@@ -12,6 +12,9 @@ document.getElementsByClassName('github-bt')[1].onclick = function () {
   window.open('https://github.com/danieLLeonte/Find-Your-Hat');
 };
 
+document.getElementsByClassName('github-bt')[2].onclick = function () {
+  window.open('https://github.com/danieLLeonte/matching-memory');
+};
 // const sections = document.querySelectorAll('section');
 // sections.forEach(section => {
 //   section.addEventListener('mouseenter', (event) => {

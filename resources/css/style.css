@@ -235,6 +235,8 @@ footer {
 
 .projects-container {
   text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .project-container {
