@@ -15,6 +15,10 @@ document.getElementsByClassName('github-bt')[1].onclick = function () {
 document.getElementsByClassName('github-bt')[2].onclick = function () {
   window.open('https://github.com/danieLLeonte/matching-memory');
 };
+
+document.getElementsByClassName('github-bt')[3].onclick = function () {
+  window.open('https://github.com/danieLLeonte/Expense-Tracker');
+};
 // const sections = document.querySelectorAll('section');
 // sections.forEach(section => {
 //   section.addEventListener('mouseenter', (event) => {
