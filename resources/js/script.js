@@ -19,6 +19,10 @@ document.getElementsByClassName('github-bt')[2].onclick = function () {
 document.getElementsByClassName('github-bt')[3].onclick = function () {
   window.open('https://github.com/danieLLeonte/Expense-Tracker');
 };
+
+document.getElementsByClassName('github-bt')[4].onclick = function () {
+  window.open('https://github.com/danieLLeonte/Cryptoverse');
+};
 // const sections = document.querySelectorAll('section');
 // sections.forEach(section => {
 //   section.addEventListener('mouseenter', (event) => {
